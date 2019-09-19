@@ -15,11 +15,15 @@ public class Main {
 
 	public static void main(String[] args) { 
 		int lines = 5;
-		for (int i = 0; i < lines; i++) {
-			for (int j = 0; j < i+1; j++) {
-				System.out.print(j);
+		for (int i = 0; i < lines; i=i+1) {
+			for (int j = 0; j < lines - i; j++) {
+				System.out.print(" ");
 			}
-			System.out.println("");
+			for (int k = 0; k <= i; k++) {
+                System.out.print(k + " ");
+                
+            }
+            System.out.println();
 		}
 	}
 }

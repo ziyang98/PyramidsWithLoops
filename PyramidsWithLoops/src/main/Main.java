@@ -20,17 +20,17 @@ package main;
 public class Main {
 
 	public static void main(String[] args) { 
-        int row,temp,c,n;
-        temp = n = 5;
-        for ( row = 1 ; row <= n ; row++ )
+        int lines,j,n;
+        lines = n = 5;
+        for ( int i = 1 ; i <= n ; i++ )
            {
-              for ( c = 1 ; c < temp ; c++ )
+              for ( j = 1 ; j < lines ; j++ )
                 System.out.print(" ");
 
-              temp--;
+              lines--;
 
-              for ( c = 1 ; c <= 2*row - 1 ; c++ )
-                  System.out.print(c);
+              for ( j = 1 ; j <= 2*i - 1 ; j++ )
+                  System.out.print(j);
 
               System.out.println("");}
 /*		int lines = 5;

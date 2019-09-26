@@ -5,7 +5,7 @@
  * Course: IS4010 App Dev with Java
  * Spring 2019
  * Description: This is the fourth assignment.This program can print pyramids using loops.
- * Citations: 
+ * Citations: Stack Overflow,https://stackoverflow.com/questions/21373738/simple-java-program-of-pyramid
  * Anything else:
  * Printing pyramids using loops. It kind-of works.  
  * What I really want is
@@ -20,30 +20,15 @@ package main;
 public class Main {
 
 	public static void main(String[] args) { 
-        int lines,j,n;
+        int lines,n;
         lines = n = 5;
-        for ( int i = 1 ; i <= n ; i++ )
+        for ( int i = 1 ; i <= n ; i++ )// The number of rows
            {
-              for ( j = 1 ; j < lines ; j++ )
-                System.out.print(" ");
-
+              for (int j = 1 ; j < lines ; j++ ) // The number of columns
+                System.out.print(" "); // Print the spaces
               lines--;
-
-              for ( j = 1 ; j <= 2*i - 1 ; j++ )
-                  System.out.print(j);
-
+              for (int j = 1 ; j <= 2*i - 1 ; j++ )
+                  System.out.print(i); //Print the number 
               System.out.println("");}
-/*		int lines = 5;
-		for (int i = 1; i <= lines; i=i+1) {
-			for (int j = 1; j < lines; j++) {
-				System.out.print(" ");
-			
-			lines--;
-			
-			for (int k = 1; k <= 2*lines - 1; k++) {
-                System.out.print(k);  }             
-            }
-            System.out.println();
-		}*/
 	}
 }
